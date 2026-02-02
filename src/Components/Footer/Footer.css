@@ -1,0 +1,111 @@
+.footer-wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 2.5%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Brand & Contacts */
+.footer-logo {
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+.icon {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Navigation Lists */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.footer-section ul li:hover {
+    color: #1E3A8A;
+}
+
+/* Address & Socials */
+.address-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.address-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #4A90E2; /* Matches your brand blue */
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: left;
+    }
+}

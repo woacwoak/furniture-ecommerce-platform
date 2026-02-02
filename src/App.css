@@ -15,3 +15,38 @@ body {
   margin: 0 auto;
   padding: 0 16px;
 }
+
+#center-headings {
+  text-align: center;
+}
+
+.container-headings-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-right {
+  display: flex;
+  align-items: center;
+}
+
+.custom-button.darkblue {
+  background-color: white;
+  color: #1E3A8A;
+  border: #1E3A8A 2px solid;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
