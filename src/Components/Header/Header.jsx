@@ -1,11 +1,31 @@
 import './Header.css';
-import {Link} from 'react-router-dom';
-import {NavLink} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
+import { useState, useRef, useEffect } from 'react';
+
 import Logo from '../../assets/SvitMeblivDarkLogo.png'
 import CartIcon from '../../assets/shoppingCartIcon.svg'
 import UserIcon from '../../assets/userIcon.svg'
 
 const Header = () => {
+  const [hidden, setHidden] = useState(false);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY.current) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+
+      lastScrollY.current = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
   return (
     <>
       <div className="top-stripe bg-blue">
@@ -14,7 +34,7 @@ const Header = () => {
         </div>
       </div>
 
-      <header className="header">
+      <header className={`header ${hidden ? "header--hidden" : ""}`}>
         <div className="container">
           <div className="headerInner">
 
@@ -55,6 +75,7 @@ const Header = () => {
           </div>
         </div>
       </header>
+      
     </>
   );
 };

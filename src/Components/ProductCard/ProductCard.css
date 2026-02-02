@@ -26,6 +26,10 @@
   object-fit: cover;
 }
 
+.product-image:hover {
+  transform: scale(1.05)
+}
+
 .product-info {
   padding: 16px;
   display: flex;
