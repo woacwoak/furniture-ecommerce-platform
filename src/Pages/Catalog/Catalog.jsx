@@ -1,6 +1,8 @@
 import './Catalog.css';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
+import ProductCard from '../../Components/ProductCard/ProductCard.jsx';
+import ProductSection from '../../Components/ProductSection/ProductSection.jsx';
 
 const manufacturers = ["Happy Lounge", "Lado", "Stylegroup", "Dyvanoff"];
 
@@ -11,7 +13,7 @@ const Catalog = () => {
             
             <main className="products-container">
                 <header className="products-header">
-                    <h1 className="page-title">Товари</h1>
+                    <h1>Товари</h1>
                     <p className="page-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -30,7 +32,7 @@ const Catalog = () => {
                             <h3 className="group-label">Виробник</h3>
                             {manufacturers.map((name) => (
                                 <label key={name} className="checkbox-item">
-                                    <input type="checkbox" />
+                                    <input type="checkbox"/>
                                     <span className="checkmark"></span>
                                     {name}
                                 </label>
@@ -51,18 +53,8 @@ const Catalog = () => {
                                 </select>
                             </div>
                         </div>
-
-                        {/* Reuse your ProductItem component here */}
-                        <div className="product-listing-grid">
-                            {/* Map through products here */}
-                            {/* Example placeholder cards */}
-                            {[1, 2, 3, 4, 5, 6].map((id) => (
-                                <div key={id} className="placeholder-card">
-                                    <div className="placeholder-img"></div>
-                                    <h3>Lorem ipsum</h3>
-                                    <p>$99</p>
-                                </div>
-                            ))}
+                        <div>
+                            <ProductSection/>
                         </div>
 
                         <button className="load-more">Більше</button>

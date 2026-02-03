@@ -1,15 +1,18 @@
-h1{
-    font-size: 56px;
-    color: #1E3A8A;
-    font-weight: bold;
+.heading {
+  color: #1E3A8A;
+  font-weight: 700;
 }
-h2{
-    font-size: 36px;
-    color: #1E3A8A;
-    font-weight: bold;
+
+.heading.h1 {
+  font-size: 56px;
 }
-h3{
-    font-size: 24px;
-    color: #6B7280;
-    font-weight: 500;
+
+.heading.h2 {
+  font-size: 36px;
+}
+
+.heading.h3 {
+  font-size: 24px;
+  color: #6B7280;
+  font-weight: 500;
 }

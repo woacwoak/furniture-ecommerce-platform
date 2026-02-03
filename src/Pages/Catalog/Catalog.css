@@ -89,19 +89,17 @@
     color: #333;
     font-size: 0.9rem;
 }
+.sort-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 .sort-select {
     padding: 8px 12px;
     border: 1px solid #333;
     border-radius: 4px;
     font-weight: 600;
-}
-
-/* Product Listing */
-.product-listing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
 }
 
 .placeholder-card h3 {
@@ -132,9 +130,5 @@
     
     .filters-sidebar {
         width: 100%;
-    }
-
-    .product-listing-grid {
-        grid-template-columns: 1fr 1fr;
     }
 }
