@@ -46,11 +46,51 @@ const Header = () => {
 
             <nav className="headerNav">
               <ul className="navLinks">
-                <li><NavLink to="/catalog">Каталог</NavLink></li>
-                <li><NavLink to="/">Про магазин</NavLink></li>
-                <li><NavLink to="/">Доставка та оплата</NavLink></li>
-                <li><NavLink to="/">Гарантія</NavLink></li>
-                <li><NavLink to="/">Контакти</NavLink></li>
+                <li><NavLink to="/catalog">Каталог</NavLink>
+                <div className="dropdown">
+                  <div className="dropdown-content">
+                  <div className="row">
+                    <div className="column">
+                      <h3>Category 1</h3>
+                      <a href="/">Link 1</a>
+                      <a href="/">Link 2</a>
+                      <a href="/">Link 3</a>
+                    </div>
+                    <div className="column">
+                      <h3>Category 2</h3>
+                      <a href="/">Link 1</a>
+                      <a href="/">Link 2</a>
+                      <a href="/">Link 3</a>
+                    </div>
+                    <div className="column">
+                      <h3>Category 3</h3>
+                      <a href="/">Link 1</a>
+                      <a href="/">Link 2</a>
+                      <a href="/">Link 3</a>
+                    </div>
+                    <div className="column">
+                      <h3>Category 3</h3>
+                      <a href="/">Link 1</a>
+                      <a href="/">Link 2</a>
+                      <a href="/">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+                </li>
+                <li><NavLink to="/aboutus">Про магазин</NavLink></li>
+                <li><NavLink to="/deliveryandpayment">Доставка та оплата</NavLink></li>
+                <li><NavLink to="/guarantee">Гарантія</NavLink></li>
+                <li><NavLink
+                to="#footer"
+                onClick={(e) => { 
+                  e.preventDefault();
+                  const footer = document.getElementById('footer');
+                  footer.scrollIntoView({ behavior: 'smooth' });
+                }}
+                >
+                  Контакти</NavLink></li>
               </ul>
             </nav>
 
@@ -58,7 +98,7 @@ const Header = () => {
               <input
                 type="text"
                 className="searchInput"
-                placeholder="Пошук..."
+                placeholder="Пошук меблів..."
               />
 
               <Link to="/cart" className="cartIcon">
