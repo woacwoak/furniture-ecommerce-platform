@@ -1,13 +1,12 @@
-import React from 'react';
 import './Footer.css';
 import Logo from "../../assets/SvitMeblivDarkLogo.png";
 import { FaPhoneAlt, FaViber, FaEnvelope, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="footer-wrapper">
+        <footer className="container">
             <hr className="footer-divider" />
-            <div className="container footer-content">
+            <div className="footer-content">
                 
                 {/* Logo & Contacts */}
                 <div className="footer-section brand-contacts">

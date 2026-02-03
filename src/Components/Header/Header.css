@@ -76,15 +76,15 @@
 .headerRight {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 30px;
 }
 
 .searchInput {
-  padding: 6px 12px;
+  padding: 10px 12px;
   border-radius: 20px;
   border: 1px solid #D1D5DB;
-  font-size: 14px;
-  width: 180px;
+  font-size: 16px;
+  width: 220px;
   outline: none;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .cartIcon img {
-  height: 22px;
+  height: 25px;
 }
 
 .cartCount {
@@ -120,14 +120,14 @@
 .userOption {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   text-decoration: none;
   color: #1E3A8A;
   font-weight: 500;
 }
 
 .userOption img {
-  height: 22px;
+  height: 25px;
 }
 
 .userOption:hover {
@@ -135,6 +135,6 @@
 }
 
 .userOption span {
-  font-size: 16 px;
+  font-size: 18px;
   color:#0f255f;
 }

@@ -1,0 +1,140 @@
+.products-container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+.products-header {
+    margin-bottom: 40px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.page-description {
+    max-width: 500px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Layout Grid */
+.products-layout {
+    display: flex;
+    gap: 40px;
+}
+
+/* Sidebar */
+.filters-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.clear-filters {
+    background: none;
+    border: none;
+    color: #999;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.filter-group {
+    margin-top: 20px;
+}
+
+.group-label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Main Content & Sorting */
+.main-content {
+    flex-grow: 1;
+}
+
+.grid-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.products-found {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.sort-select {
+    padding: 8px 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Product Listing */
+.product-listing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.placeholder-card h3 {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.placeholder-img {
+    background-color: #d1d5db;
+    aspect-ratio: 1/1;
+}
+
+.load-more {
+    display: block;
+    margin: 40px auto;
+    padding: 12px 60px;
+    background: white;
+    border: 1px solid #333;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .products-layout {
+        flex-direction: column;
+    }
+    
+    .filters-sidebar {
+        width: 100%;
+    }
+
+    .product-listing-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,22 +1,15 @@
-.footer-wrapper {
-    width: 100%;
-    background-color: #fff;
-    padding-top: 20px;
-    font-family: 'Inter', sans-serif;
-}
-
 .footer-divider {
     border: 0;
     height: 1px;
     background-color: #e0e0e0;
-    width: 95%;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 30px;   
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    padding: 40px 2.5%;
+    padding: 40px 0;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -86,7 +79,7 @@
 .social-icon {
     font-size: 24px;
     cursor: pointer;
-    color: #4A90E2; /* Matches your brand blue */
+    color: #1e3a8a; /* Matches your brand blue */
     transition: transform 0.2s;
 }
 

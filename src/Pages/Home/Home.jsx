@@ -1,3 +1,4 @@
+import './Home.css';
 import Header from '../../Components/Header/Header.jsx';
 import Categories from '../../Components/Categories/Categories.jsx';
 import Hero from '../../Components/Hero/Hero.jsx';
@@ -13,18 +14,22 @@ const Home = () => {
         <Header/>
         <Categories/>
         <Hero/>
-        <div className="container" id="center-headings">
-            <Heading1 text="Популярні Категорії"/>
-            <Heading2 text="Оберіть категорію меблів, яка відповідає вашим потребам та стилю"/>
+        <div className="container">
+            <div className="text-margin centered-text">
+                <Heading1 text="Популярні Категорії"/>
+                <Heading2 text="Оберіть категорію меблів, яка відповідає вашим потребам та стилю"/>
+            </div>
         </div>
         <CategoryCards/>
-        <div className="container-headings-button">
-            <div className="container-left">
-            <Heading1 text="Популярні Товари"/>
-            <Heading2 text="Найкращі пропозиції цього місяця"/>
-            </div>
-            <div className="container-right">
-            <Button text="Переглянути усі" className="darkblue"/>
+        <div className="text-margin">
+            <div className="container-headings-button">
+                <div className="container-left">
+                <Heading1 text="Популярні Товари"/>
+                <Heading2 text="Найкращі пропозиції цього місяця"/>
+                </div>
+                <div className="container-right">
+                <Button text="Переглянути усі" className="darkblue"/>
+                </div>
             </div>
         </div>
         <ProductSection/>
